@@ -64,7 +64,26 @@ Together, these layers connect source information, operational event work and ma
 
 ## Codex and GPT-5.6
 
-The underlying EVA production concept existed before Build Week. The anonymized browser demo was implemented and refined during Build Week with Codex and GPT-5.6. Its purpose is to demonstrate a safe human–AI workflow and Codex-assisted implementation; it does not claim autonomous operation.
+The underlying EVA production concept existed before Build Week. The anonymized browser prototype was newly implemented and refined during Build Week with Codex and GPT-5.6.
+
+I used Codex and GPT-5.6 to:
+
+- translate my domain requirements and safety rules into an implementation plan;
+- build the static HTML, CSS and JavaScript application;
+- structure the fictional event, task, contact and subtask data;
+- implement the controlled task-completion workflow;
+- implement PLAN → APPROVE → APPLY with exact before-and-after previews;
+- create local persistence, recovery behavior and the audit trail;
+- test file:// execution and browser compatibility;
+- review privacy, accessibility and robustness;
+- identify and repair two concrete safety issues;
+- prepare the public documentation and release package.
+
+I made the key product and safety decisions: the single-source-of-truth model, the human approval gates, the scope of every change, the STOP rules and the acceptance criteria.
+
+Codex accelerated implementation, testing and review, while I remained responsible for the domain model, product direction, validation and final approval.
+
+The public demo makes no AI calls at runtime. It demonstrates the human-controlled workflow and the Codex-assisted implementation rather than autonomous event management.
 
 ## About the builder
 
