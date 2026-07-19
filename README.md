@@ -48,6 +48,20 @@ Designed for current Chrome, Edge, and Firefox on Windows. The implementation us
 - No AI model runs at runtime
 - Readiness is a transparent task-completion indicator, not an AI prediction
 
+## Beyond the single-event demo
+
+The Build Week browser prototype focuses on EVA’s single-event workspace and its human-controlled change workflow.
+
+The broader EVA architecture also includes:
+
+- semi-automatic assignment and filing of event-related emails and attachments into the correct event workspace and document folders;
+- structured filing of source documents such as contracts, technical riders and rooming lists in their designated event folders;
+- future AI-assisted extraction of relevant information from emails and attachments, always presented for human review before it is written to the event master;
+- a refreshable multi-event index providing fast and direct access to every active event workspace;
+- a future management cockpit consolidating deadlines, responsibilities, critical issues and open tasks across all active events.
+
+Together, these layers connect source information, operational event work and management oversight without creating parallel sources of truth.
+
 ## Codex and GPT-5.6
 
 The underlying EVA production concept existed before Build Week. The anonymized browser demo was implemented and refined during Build Week with Codex and GPT-5.6. Its purpose is to demonstrate a safe human–AI workflow and Codex-assisted implementation; it does not claim autonomous operation.
