@@ -52,6 +52,16 @@ Designed for current Chrome, Edge, and Firefox on Windows. The implementation us
 
 The underlying EVA production concept existed before Build Week. The anonymized browser demo was implemented and refined during Build Week with Codex and GPT-5.6. Its purpose is to demonstrate a safe human–AI workflow and Codex-assisted implementation; it does not claim autonomous operation.
 
+## About the builder
+
+EVA was initiated by Andreas B. Müller, a Swiss live-event producer, cultural project leader and communication professional with more than four decades of experience.
+
+His background includes running an event-management agency, leading tourism and cultural organizations, managing major projects, and serving on the event directorate of Switzerland’s Expo.02 with responsibility for the production of 2,500 events.
+
+Today, he helps lead the program and projects of Kulturfabrik Industrie36 and serves as president and communications lead of gambrinus jazz plus.
+
+He is not a traditional software developer. For EVA, he acted as domain expert, product owner, workflow architect and tester, using Codex and GPT-5.6 to turn operational experience into a working, human-controlled prototype.
+
 ## Codex `/feedback` Session ID
 
 Session ID: `019f74f5-40ee-7ee0-b7c2-91d7caa27a07`
