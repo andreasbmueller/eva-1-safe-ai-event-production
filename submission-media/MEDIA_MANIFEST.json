@@ -1,0 +1,65 @@
+[
+  {
+    "file": "00_EVA_BUILD_WEEK_THUMBNAIL_3x2.png",
+    "bytes": 162056,
+    "sha256": "6d8b294927e0cdcf8f7dd444f1244a7db906a40a87d83f26a7981759dc527d2a",
+    "size": [
+      1500,
+      1000
+    ]
+  },
+  {
+    "file": "01_EVA_BUILD_WEEK_OVERVIEW_3x2.png",
+    "bytes": 172700,
+    "sha256": "80ef57902b854d5f42057ba5d5c95034ed0df863eb50be8459adbba789627294",
+    "size": [
+      1500,
+      1000
+    ]
+  },
+  {
+    "file": "02_EVA_BUILD_WEEK_TASKS_3x2.png",
+    "bytes": 207929,
+    "sha256": "5bbc98d8473e9caa9e85ad3d0fee96c2254c0394551a3f2d24a5d05225aa69f6",
+    "size": [
+      1500,
+      1000
+    ]
+  },
+  {
+    "file": "03_EVA_BUILD_WEEK_SUBTASKS_3x2.png",
+    "bytes": 191374,
+    "sha256": "0ef3237e5baf8a2003591a3442ea594087974b76d55d8a81b4e22cd159299da2",
+    "size": [
+      1500,
+      1000
+    ]
+  },
+  {
+    "file": "04_EVA_BUILD_WEEK_PLAN_APPROVE_APPLY_3x2.png",
+    "bytes": 187383,
+    "sha256": "6ff76d2e6656b48cf36fcbc246a2fe82aa9e391f6a612087f5351266eb31a72a",
+    "size": [
+      1500,
+      1000
+    ]
+  },
+  {
+    "file": "05_EVA_BUILD_WEEK_AUDIT_3x2.png",
+    "bytes": 209111,
+    "sha256": "c0e862a57369487a534ce60254ef304198b8a7d7205f5f302e1b69f39619a96d",
+    "size": [
+      1500,
+      1000
+    ]
+  },
+  {
+    "file": "06_EVA_BUILD_WEEK_CODEX_GREEN_3x2.png",
+    "bytes": 179954,
+    "sha256": "251ab98bc9ed586a414c54793fcfbad30d74272eec1e7f5be60f970d19182c79",
+    "size": [
+      1500,
+      1000
+    ]
+  }
+]

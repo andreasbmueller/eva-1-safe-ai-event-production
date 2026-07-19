@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EVA 1.0 — Safe AI Event Production</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="app-header">
+    <div><p class="eyebrow">EVA 1.0 · Safe AI Event Production</p><h1 id="event-title"></h1><p id="event-id" class="event-id"></p></div>
+    <div class="header-actions"><button id="edit-event" class="secondary">Edit event</button><button id="reset-demo" class="danger-outline">Reset demo</button></div>
+    <dl id="event-facts" class="event-facts"></dl>
+    <aside class="seating-card"><span>Seating note</span><strong id="seating-note"></strong></aside>
+    <p class="refresh">Last refreshed: <time id="last-refreshed"></time></p>
+  </header>
+  <nav class="tabs" aria-label="Dashboard sections">
+    <button data-view="overview" aria-selected="true">Overview</button><button data-view="tasks">Tasks</button><button data-view="subtasks">Subtasks</button><button data-view="contacts">Contacts</button><button data-view="audit">Audit &amp; Safety</button>
+  </nav>
+  <main id="main">
+    <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+    <section id="overview" class="view active" aria-labelledby="overview-title"><div class="section-heading"><div><p class="kicker">Live status</p><h2 id="overview-title" tabindex="-1">Production overview</h2></div><button id="update-dashboard">Update dashboard</button></div><div id="metrics" class="metrics"></div><div class="overview-grid"><article class="panel"><h3>Next deadline</h3><div id="next-deadline"></div></article><article class="panel"><h3>Responsible team</h3><div id="team"></div></article><article class="panel readiness"><h3>Production readiness</h3><div id="readiness"></div></article></div></section>
+    <section id="tasks" class="view" aria-labelledby="tasks-title"><div class="section-heading"><div><p class="kicker">Controlled actions</p><h2 id="tasks-title" tabindex="-1">Production tasks</h2></div></div><form id="task-filters" class="filters"><label>Status<select id="filter-status"><option value="">All statuses</option></select></label><label>Area<select id="filter-area"><option value="">All areas</option></select></label><label>Priority<select id="filter-priority"><option value="">All priorities</option></select></label><button type="reset" class="secondary">Clear filters</button></form><div id="task-list" class="task-list"></div></section>
+    <section id="subtasks" class="view" aria-labelledby="subtasks-title"><div class="section-heading"><div><p class="kicker">PLAN → APPROVE → APPLY</p><h2 id="subtasks-title" tabindex="-1">BKL-001 — Confirm backline requirements</h2><p>Form edits remain drafts until you create, approve, and apply a plan.</p></div></div><form id="subtask-form"><div id="subtask-list" class="subtask-list"></div><div class="workflow-actions"><button type="submit">Create plan</button><button type="button" id="cancel-subtask-draft" class="secondary">Cancel draft</button></div></form></section>
+    <section id="contacts" class="view" aria-labelledby="contacts-title"><div class="section-heading"><div><p class="kicker">Fictional directory</p><h2 id="contacts-title" tabindex="-1">Production contacts</h2></div></div><div id="contact-list" class="contact-grid"></div></section>
+    <section id="audit" class="view" aria-labelledby="audit-title"><div class="section-heading"><div><p class="kicker">Traceable by design</p><h2 id="audit-title" tabindex="-1">Audit &amp; Safety</h2></div></div><div class="safety-grid"><article><strong>No automatic deletion</strong><span>Reset affects fictional browser data only.</span></article><article><strong>No silent overwrite</strong><span>Changes are previewed before application.</span></article><article><strong>Human approval</strong><span>Consequential changes require confirmation.</span></article><article><strong>Scoped changes</strong><span>One event and one entity at a time.</span></article><article><strong>Audit every change</strong><span>Before and after values remain visible.</span></article><article><strong>Demo reset available</strong><span>Original fictional sample data is preserved.</span></article></div><div id="audit-list" class="audit-list"></div></section>
+  </main>
+  <footer>All people, events, venues, organizations, and contact details shown here are fictional.</footer>
+  <dialog id="confirm-dialog"><form method="dialog"><h2 id="confirm-title"></h2><p id="confirm-text"></p><div class="dialog-actions"><button value="cancel" class="secondary">Cancel</button><button value="confirm" id="confirm-action">Confirm</button></div></form></dialog>
+  <dialog id="event-dialog"><form id="event-form"><h2>Edit event details</h2><p class="plan-banner">Human approval is required before any change is applied.</p><div id="event-fields" class="form-grid"></div><div class="dialog-actions"><button type="button" class="secondary" data-close="event-dialog">Cancel</button><button type="submit">Create plan</button></div></form></dialog>
+  <dialog id="plan-dialog"><div><p class="kicker">PLAN → APPROVE → APPLY</p><h2 id="plan-title">Review change plan</h2><p>No stored data has changed yet.</p><div id="plan-preview" class="plan-preview"></div><label class="approval"><input id="approve-plan" type="checkbox"> I reviewed this plan and explicitly approve these changes.</label><div class="dialog-actions"><button id="cancel-plan" class="secondary">Cancel plan</button><button id="apply-plan" disabled>Apply changes</button></div></div></dialog>
+  <script src="demo-data.js"></script><script src="app.js"></script>
+</body>
+</html>
